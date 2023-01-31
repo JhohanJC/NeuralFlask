@@ -25,6 +25,6 @@ FLASK_DEBUG = 1
 ### Run the project
 
 ```
-python .\main.py
+python .\main.py ó
 flask run
 ```
