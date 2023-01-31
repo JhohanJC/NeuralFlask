@@ -8,6 +8,18 @@
 git clone https://github.com/JhohanJC/NeuralFlask.git
 ```
 
+### Create a virtual machine
+
+```
+python -m venv env
+```
+
+### Activate the virtual machine
+
+```
+./env/scripts/activate
+```
+
 ### Install required dependencies
 
 ```
