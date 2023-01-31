@@ -1,0 +1,7 @@
+# archivos privados
+.env
+/env
+env/
+/__pycache__
+/pycache 
+/network/__pycache__

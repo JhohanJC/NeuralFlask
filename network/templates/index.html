@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %} 
+    <h3>Enter the binary data</h3>
+    <div class="mb-3">
+      <form action="{{url_for('training_predict')}}" method="post">
+        <label for="x1" class="form-label">Binary input X1:</label>
+        <input type="number" class="form-control" name="x1" id="x1" min="0" max="1" required>
+        <br>
+        <label for="x2" class="form-label">Binary input X2:</label>
+        <input type="number" class="form-control" name="x2" id="x2" min="0" max="1" required>
+        <br>
+        <input type="submit" class="btn btn-primary" value="Predict" id="trainNeural">
+        <output id="messageOutput">&nbsp;</output>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </form>
+    </div>
+    
+{% endblock %}

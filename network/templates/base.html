@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XNOR Neural Network</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+  <div class="container-sm">
+    <div class="card mt-5 p-3 shadow">
+      <h1>XNOR Neural Network</h1>
+      <table class="table table-bordered">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">X1</th>
+            <th scope="col">X2</th>
+            <th scope="col">OUTPUT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>0</td>
+            <td>0</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+      {% block content %} 
+    
+      {% endblock %}
+      <a class="btn btn-outline-success" href="{{url_for('index')}}" role="button">Refresh</a>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
