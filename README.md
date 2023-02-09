@@ -43,5 +43,3 @@ FLASK_DEBUG = 1
 python .\main.py ó
 flask run
 ```
-
-### Ejecución del proyecto
