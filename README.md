@@ -1,8 +1,5 @@
 # XNOR ANN Built Into Flask
 
-<p>Nota: no se utilizó librerias ni frameworks de machine learning para implementar 
-la red neuronal </p>
-
 ## Main recommendations of the project
 
 ### Clone de project
