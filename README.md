@@ -41,11 +41,13 @@ FLASK_DEBUG = 1
 ### Run the project
 
 ```
-python .\main.py ó
-flask run (opcional)
+python .\main.py or
+flask run (optional)
 ```
 
-### Run the neuralnetwork.py
+### Run the neuralnetwork file (optional)
+
+<p>Neural network standalone file</p>
 
 ```
 python .\neuralnetwork.py
