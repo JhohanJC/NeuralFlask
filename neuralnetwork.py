@@ -46,12 +46,13 @@ for i in range(60000):
     wbdate['b3'] += ler*np.sum(wbdate['dL3'], axis=0, keepdims=True)
     wbdate['b2'] += ler*np.sum(wbdate['dL2'], axis=0, keepdims=True)
     wbdate['b1'] += ler*np.sum(wbdate['dL1'], axis=0, keepdims=True)
+# Predictions
 # inputsx = np.array([[0,0], [0,1], [1,1], [1,0]])
 inputsx = np.array([[0,1]])
 wbdate['L1'] = sigmoid(np.dot(inputsx, wbdate['W1']) + wbdate['b1'])
 wbdate['L2'] = sigmoid(np.dot(wbdate['L1'], wbdate['W2']) + wbdate['b2'])
 predictions = sigmoid(np.dot(wbdate['L2'], wbdate['W3']) + wbdate['b3'])
 predictions = [round(x[0]) for x in predictions]
-print(predictions[0])
+print(f'Predicted output: {predictions[0]}')
 accuracy = (1 - np.mean(np.abs(error))) * 100
 print("Exact accuracy: " + str(accuracy) + "%")

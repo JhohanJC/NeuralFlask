@@ -1,5 +1,9 @@
 # XNOR ANN Built Into Flask
 
+<p>
+Note: the artificial neural network was implemented without using machine learning libraries and frameworks.
+</p>
+
 ## Main recommendations of the project
 
 ### Clone de project
@@ -38,5 +42,11 @@ FLASK_DEBUG = 1
 
 ```
 python .\main.py ó
-flask run
+flask run (opcional)
+```
+
+### Run the neuralnetwork.py
+
+```
+python .\neuralnetwork.py
 ```
